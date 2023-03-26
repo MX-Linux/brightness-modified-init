@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#DEBHELPER#
+
+# preinst script for brightness-modified-init
+
+#set -e
+
+case "$1" in
+  install|upgrade) dpkg-divert --quiet                                               \
+                               --add                                                 \
+                               --package brightness-modified-init            \
+                               --rename                              \
+                               --divert /etc/init.d/brightness.dpkg-distrib \
+                               /etc/init.d/brightness
+                   ;;
+
+                *) :
+                   ;;
+esac 
+
+exit 0

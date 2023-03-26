@@ -1,0 +1,11 @@
+brightness-modified-init (23.03.02) mx; urgency=medium
+
+  * don't run under systemd
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 24 Mar 2023 21:06:08 -0400
+
+brightness-modified-init (23.03.01) mx; urgency=medium
+
+  * Initial release.
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 23 Mar 2023 19:31:12 -0400
